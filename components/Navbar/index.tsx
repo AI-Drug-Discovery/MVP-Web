@@ -9,7 +9,7 @@ function Navbar() {
 
         <Text>Home</Text>
         <Menu  openDelay={100} closeDelay={400}>
-           <Menu.Target><Text>Solution</Text></Menu.Target>
+           <Menu.Target><Text>Solutions</Text></Menu.Target>
            <Menu.Dropdown>
              <Menu.Label>Hello there !!</Menu.Label>
            </Menu.Dropdown>
