@@ -2,11 +2,11 @@
 
 import React from "react";
 import classes from "./page.module.css";
-import soltionImg from "../../../public/solutiondetailsimg.svg";
-import Navbar from "../../../components/Navbar";
-import ContactUsSection from "../../../components/ContactUsSection";
-import Footer from "../../../components/Footer";
-import ConfigCard from "../../../components/ConfigCard";
+import soltionImg from "@/public/solutiondetailsimg.svg";
+import Navbar from "@/components/Navbar";
+import ContactUsSection from "@/components/ContactUsSection";
+import Footer from "@/components/Footer";
+import ConfigCard from "@/components/ConfigCard";
 import {
   Button,
   Container,

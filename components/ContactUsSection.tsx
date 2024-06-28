@@ -16,8 +16,8 @@ function ContactUsSection() {
         size={"16px"}
         style={{ textAlign: "center", maxWidth: "380px", lineHeight: 1.5 }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed do eiusmod
-        tempor incididunt ut labore et  dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
       </Text>
       <Button w={270} h={80} radius={"20px"} size="25px">
         {" "}

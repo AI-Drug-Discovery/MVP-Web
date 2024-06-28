@@ -1,8 +1,8 @@
-import Navbar from "../../../components/Navbar";
-import CardMain from "../../../components/SolutionCard/CardMain";
+import Navbar from "@/components/Navbar";
+import CardMain from "@/components/SolutionCard/CardMain";
 import { Flex, Title } from "@mantine/core";
-import ContactUsSection from "../../../components/ContactUsSection";
-import Footer from "../../../components/Footer";
+import ContactUsSection from "@/components/ContactUsSection";
+import Footer from "@/components/Footer";
 
 export default function Solutions() {
   return (

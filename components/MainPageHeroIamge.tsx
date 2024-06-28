@@ -1,7 +1,7 @@
 "use client";
 import { Button, Group, Stack, Text } from "@mantine/core";
 import Image from "next/image";
-import nextSvg from "../public/unsplash_YQYacLW8o2U.png";
+import nextSvg from "@/public/unsplash_YQYacLW8o2U.png";
 function MainPageHeroIamge() {
   return (
     <Group justify="space-between" h={788} my={"88px"} lh={"700px"}>
