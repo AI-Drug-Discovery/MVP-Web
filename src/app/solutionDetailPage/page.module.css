@@ -1,0 +1,9 @@
+.tabs {
+  @media (max-width: 464px) {
+    gap: "10px";
+  }
+  gap: "30px";
+  :hover {
+    background-color: #222222;
+  }
+}

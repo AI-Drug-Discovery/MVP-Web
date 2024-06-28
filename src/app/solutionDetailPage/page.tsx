@@ -1,33 +1,26 @@
 "use client";
+
 import React from "react";
+import classes from "./page.module.css";
 import soltionImg from "../../../public/solutiondetailsimg.svg";
 import Navbar from "../../../components/Navbar";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
-import { useState } from "react";
 import {
   Button,
   Container,
   Group,
-  Select,
   Text,
   Title,
   Tabs,
-  Paper,
-  TextInput,
   Stack,
   Pill,
+  Flex,
 } from "@mantine/core";
 import Image from "next/image";
-import { Gruppo } from "next/font/google";
-import { Pi } from "@phosphor-icons/react";
 import ConfigCard from "../../../components/ConfigCard";
 
 const SolutionDetailsPage = () => {
-  const [msaConcat, setMsaConcat] = useState<string | null>(null);
-  const [msaMethod, setMsaMethod] = useState<string | null>(null);
-  const [pairMode, setPairMode] = useState<string | null>(null);
-
   const MSASettingsContent = () => (
     <>
       <ConfigCard />
@@ -61,13 +54,13 @@ const SolutionDetailsPage = () => {
     <>
       <Navbar />
 
-      <Container fluid p={{base: "10px", sm: "60px"}}>
+      <Container fluid p={{ base: "10px", sm: "60px" }}>
         <Group justify="space-around">
           <Stack>
-            <Title fz={{base: "30px", sm: "60px"}} mt="xl">
+            <Title fz={{ base: "30px", sm: "60px" }} mt="xl">
               Use{" "}
               <Text
-                fz={{base: "30px", sm: "60px"}}
+                fz={{ base: "30px", sm: "60px" }}
                 fw={700}
                 component="span"
                 variant="gradient"
@@ -75,7 +68,12 @@ const SolutionDetailsPage = () => {
               >
                 RoseTTA{" "}
               </Text>
-              <Text fz={{base: "30px", sm: "60px"}} fw={700} component="span" c={"white"}>
+              <Text
+                fz={{ base: "30px", sm: "60px" }}
+                fw={700}
+                component="span"
+                c={"white"}
+              >
                 Fold 2.
               </Text>
             </Title>
@@ -87,7 +85,7 @@ const SolutionDetailsPage = () => {
                 Molecular Docking
               </Pill>
             </Group>
-            <Text mt="sm" maw={"500px"} fz={{base: "sm", sm: "md"}}>
+            <Text mt="sm" maw={"500px"} fz={{ base: "sm", sm: "md" }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Text>
@@ -99,7 +97,15 @@ const SolutionDetailsPage = () => {
         </Group>
 
         <Stack gap={"xl"}>
-          <Title fz={{base: "25px", sm: "35px"}} px={"12px"} py={"6px"} ml={{base: "xs", sm:"lg"}} bg={"#222222"} maw={"460px"} style={{borderRadius: "20px"}}>
+          <Title
+            fz={{ base: "25px", sm: "35px" }}
+            px={"12px"}
+            py={"6px"}
+            ml={{ base: "xs", sm: "lg" }}
+            bg={"#222222"}
+            maw={"460px"}
+            style={{ borderRadius: "20px" }}
+          >
             Configurations & Options
           </Title>
 
@@ -109,10 +115,7 @@ const SolutionDetailsPage = () => {
           </Text>
 
           <Tabs defaultValue="MSA">
-            <Tabs.List
-              justify="center"
-              style={{ base: { gap: "40px" }, sm: { gap: "10px" } }}
-            >
+            <Tabs.List justify="center" className={classes.tabs}>
               <Tabs.Tab value="MSA">MSA Settings</Tabs.Tab>
               <Tabs.Tab value="Symmetry">Symmetry Settings</Tabs.Tab>
               <Tabs.Tab value="ModelsInput">Models Input</Tabs.Tab>
