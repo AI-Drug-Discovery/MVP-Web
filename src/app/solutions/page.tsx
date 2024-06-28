@@ -1,5 +1,5 @@
 import Navbar from "../../../components/Navbar";
-import CardMain from "../../../components/CardMain";
+import CardMain from "../../../components/SolutionCard/CardMain";
 import { Flex, Title } from "@mantine/core";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";

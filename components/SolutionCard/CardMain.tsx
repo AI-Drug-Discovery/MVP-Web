@@ -1,10 +1,9 @@
 "use client";
+
 import { Stack, Text, Button, Group, Pill } from "@mantine/core";
 import { useRouter } from "next/navigation";
-
 import Image from "next/image";
-
-import dnaImage from "../public/unsplash_YQYacLW8o2U.png";
+import dnaImage from "../../public/unsplash_YQYacLW8o2U.png";
 
 function CardMain() {
   const router = useRouter();

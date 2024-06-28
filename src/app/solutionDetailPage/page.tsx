@@ -21,7 +21,7 @@ import {
 import Image from "next/image";
 import { Gruppo } from "next/font/google";
 import { Pi } from "@phosphor-icons/react";
-import ConfigCard from "../../../components/configCard";
+import ConfigCard from "../../../components/ConfigCard";
 
 const SolutionDetailsPage = () => {
   const [msaConcat, setMsaConcat] = useState<string | null>(null);
@@ -99,7 +99,7 @@ const SolutionDetailsPage = () => {
         </Group>
 
         <Stack gap={"xl"}>
-          <Title fz={{base: "30px", sm: "60px"}} px={"12px"} py={"6px"} ml={{base: "xs", sm:"lg"}} bg={"#222222"} maw={"460px"} style={{borderRadius: "20px"}}>
+          <Title fz={{base: "25px", sm: "35px"}} px={"12px"} py={"6px"} ml={{base: "xs", sm:"lg"}} bg={"#222222"} maw={"460px"} style={{borderRadius: "20px"}}>
             Configurations & Options
           </Title>
 

@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import Navbar from "../../components/Navbar";
 import MainPageHeroIamge from "../../components/MainPageHeroIamge";
 import SearchComponent from "../../components/SearchComponent";
-import CardMain from "../../components/CardMain";
+import CardMain from "../../components/SolutionCard/CardMain";
 import { Group } from "@mantine/core";
 import ContactUsSection from "../../components/ContactUsSection";
 import Footer from "../../components/Footer";
