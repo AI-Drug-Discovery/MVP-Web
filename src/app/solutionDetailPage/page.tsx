@@ -6,6 +6,7 @@ import soltionImg from "../../../public/solutiondetailsimg.svg";
 import Navbar from "../../../components/Navbar";
 import ContactUsSection from "../../../components/ContactUsSection";
 import Footer from "../../../components/Footer";
+import ConfigCard from "../../../components/ConfigCard";
 import {
   Button,
   Container,
@@ -15,10 +16,8 @@ import {
   Tabs,
   Stack,
   Pill,
-  Flex,
 } from "@mantine/core";
 import Image from "next/image";
-import ConfigCard from "../../../components/ConfigCard";
 
 const SolutionDetailsPage = () => {
   const MSASettingsContent = () => (
