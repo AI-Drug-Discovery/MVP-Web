@@ -1,54 +1,21 @@
-"use client";
-
 import React from "react";
-import classes from "./page.module.css";
 import soltionImg from "@/public/solutiondetailsimg.svg";
 import Navbar from "@/components/Navbar";
 import ContactUsSection from "@/components/ContactUsSection";
 import Footer from "@/components/Footer";
-import ConfigCard from "@/components/ConfigCard";
 import {
   Button,
   Container,
   Group,
   Text,
   Title,
-  Tabs,
   Stack,
   Pill,
 } from "@mantine/core";
 import Image from "next/image";
+import ConfigForm from "@/components/ConfigForm";
 
 const SolutionDetailsPage = () => {
-  const MSASettingsContent = () => (
-    <>
-      <ConfigCard />
-      <ConfigCard />
-      <ConfigCard />
-      <ConfigCard />
-    </>
-  );
-
-  const SymmetrySettingsContent = () => (
-    <>
-      <ConfigCard />
-      <ConfigCard />
-    </>
-  );
-
-  const StochasticSettingsContent = () => (
-    <>
-      <ConfigCard />
-      <ConfigCard />
-    </>
-  );
-  const ModelsInputContent = () => (
-    <>
-      <ConfigCard />
-      <ConfigCard />
-    </>
-  );
-
   return (
     <>
       <Navbar />
@@ -95,54 +62,14 @@ const SolutionDetailsPage = () => {
           <Image src={soltionImg} alt="Alpha Fold 2" width={400} height={400} />
         </Group>
 
-        <Stack gap={"xl"}>
-          <Title
-            fz={{ base: "25px", sm: "35px" }}
-            px={"12px"}
-            py={"6px"}
-            ml={{ base: "xs", sm: "lg" }}
-            bg={"#222222"}
-            maw={"460px"}
-            style={{ borderRadius: "20px" }}
-          >
-            Configurations & Options
-          </Title>
-
-          <Text ml={"lg"} maw={"500px"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </Text>
-
-          <Tabs defaultValue="MSA">
-            <Tabs.List justify="center" className={classes.tabs}>
-              <Tabs.Tab value="MSA">MSA Settings</Tabs.Tab>
-              <Tabs.Tab value="Symmetry">Symmetry Settings</Tabs.Tab>
-              <Tabs.Tab value="ModelsInput">Models Input</Tabs.Tab>
-              <Tabs.Tab value="Stochastic">Stochastic Settings</Tabs.Tab>
-              <Tabs.Tab value="More">More</Tabs.Tab>
-            </Tabs.List>
-
-            <Tabs.Panel value="MSA">
-              <MSASettingsContent />
-            </Tabs.Panel>
-
-            <Tabs.Panel value="Symmetry">
-              <SymmetrySettingsContent />
-            </Tabs.Panel>
-
-            <Tabs.Panel value="ModelsInput">
-              <ModelsInputContent />
-            </Tabs.Panel>
-
-            <Tabs.Panel value="Stochastic">
-              <StochasticSettingsContent />
-            </Tabs.Panel>
-
-            <Tabs.Panel value="More">
-              <StochasticSettingsContent />
-            </Tabs.Panel>
-          </Tabs>
-        </Stack>
+        <ConfigForm
+          Thresholdoptions={[]}
+          Thresholdtitle="Toxicity Threshold"
+          Tdescription="The toxicity threshold a protein must pass to be marked a toxin. The range is from 0 to 1 and the default is 0.38"
+          Moptions={["Hybrid", "Extra Tree"]}
+          Modeltitle="Model"
+          Mdescription="Toxicity can be predicted using two methods: Extra Tree or a Hybrid method combining a motif-based approach with a deep learning technique."
+        />    
       </Container>
       <ContactUsSection />
       <Footer />
