@@ -1,3 +1,16 @@
+# BharatGenomics
+
+## Docker Images
+
+To download and run the Docker images in the background:
+
+```bash
+docker pull rameshbabuash/toxinpred3
+docker run -d -p 8000:8000 rameshbabuash/toxinpred3
+docker pull rameshbabuash/esm2_for_ptms
+docker run -d -p 7000:8000 rameshbabuash/esm2_for_ptms
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
