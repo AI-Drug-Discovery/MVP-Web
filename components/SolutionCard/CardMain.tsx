@@ -20,7 +20,7 @@ function CardMain() {
         style={{ borderRadius: "20px 20px 0px 0px" }}
       />
       <Text size={"36px"} py={8} px={6} fw={500}>
-        ALpha Fold 2
+        ToxinPred Peptide Toxicity
       </Text>
       <Group maw={"300px"}>
         <Pill bg={"blue"} c={"white"}>
